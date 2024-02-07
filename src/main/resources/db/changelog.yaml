@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: initial
+      author: dixent
+  - include:
+      file: db/migrations/01_create_organization.yaml
+  - include:
+      file: db/migrations/02_create_product.yaml

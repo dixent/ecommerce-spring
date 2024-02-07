@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_organization_table
+      author: dixent
+      changes:
+        - createTable:
+            tableName: organization
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
