@@ -1,7 +1,10 @@
-package Ecommerce;
+package Ecommerce.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import Ecommerce.model.Organization;
+import Ecommerce.repository.OrganizationRepository;
 
 @RestController
 public class OrganizationController {
