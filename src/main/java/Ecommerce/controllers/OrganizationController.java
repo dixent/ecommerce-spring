@@ -17,13 +17,9 @@ public class OrganizationController {
   private OrganizationRepository organizationRepository;
 
   @PostMapping("")
-  public ResponseEntity<Organization> createOrganization(@RequestParam String name) {
+  public ResponseEntity<Organization> createOrganization(@RequestBody Organization organizationData) {
     try {
-      Organization organization = new Organization();
-      organization.setName(name);
-      organizationRepository.save(organization);
-
-      return new ResponseEntity<>(organizationRepository.save(organization), HttpStatus.CREATED);
+      return new ResponseEntity<>(organizationRepository.save(organizationData), HttpStatus.CREATED);
     } catch (Exception e) {
       return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
     }
