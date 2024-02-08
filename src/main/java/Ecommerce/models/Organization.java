@@ -1,4 +1,6 @@
-package Ecommerce.model;
+package Ecommerce.models;
+
+import java.util.List;
 
 import jakarta.persistence.*;
 

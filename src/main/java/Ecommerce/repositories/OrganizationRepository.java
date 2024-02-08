@@ -1,9 +1,9 @@
-package Ecommerce.repository;
+package Ecommerce.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import Ecommerce.model.Organization;
+import Ecommerce.models.Organization;
 
 @Repository
 public interface OrganizationRepository extends CrudRepository<Organization, Long>{

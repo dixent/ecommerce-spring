@@ -1,4 +1,4 @@
-package Ecommerce.controller;
+package Ecommerce.controllers;
 
 import java.util.Optional;
 
@@ -7,8 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import Ecommerce.model.Organization;
-import Ecommerce.repository.OrganizationRepository;
+import Ecommerce.models.Organization;
+import Ecommerce.repositories.OrganizationRepository;
 
 @RestController
 @RequestMapping("/api/organizations")
