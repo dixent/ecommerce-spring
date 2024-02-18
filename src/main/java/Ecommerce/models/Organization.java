@@ -3,6 +3,7 @@ package Ecommerce.models;
 import java.util.List;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table
@@ -10,7 +11,14 @@ public class Organization {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
   private Long id;
+  @NotBlank(message = "Name is mandatory")
   private String name;
+
+  public Organization() {
+  }
+  public Organization(String name) {
+    this.name = name;
+  }
 
   public Long getId() {
     return id;

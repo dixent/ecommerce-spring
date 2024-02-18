@@ -65,6 +65,35 @@
       <scope>import</scope>
       <type>pom</type>
     </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<version>3.2.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUnit Jupiter Engine for running tests -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.10.0-M1</version>
+			<scope>test</scope>
+    </dependency>
+
+		<!-- Hibernate Validator -->
+    <dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>7.0.1.Final</version>
+    </dependency>
+
+    <!-- Hibernate Validator Annotation Processor (optional) -->
+    <dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator-annotation-processor</artifactId>
+			<version>7.0.1.Final</version>
+    </dependency>
 	</dependencies>
 
 	<build>
@@ -85,16 +114,14 @@
 					<url>jdbc:mysql://localhost:3308/ecommerce</url>
 					<username>user</username>
 					<password>password</password>
-					<!-- Other configurations -->
 				</configuration>
 				<dependencies>
 					<!-- Database driver dependency -->
 					<dependency>
 						<groupId>mysql</groupId>
 						<artifactId>mysql-connector-java</artifactId>
-						<version>8.0.26</version> <!-- or your preferred version -->
+						<version>8.0.26</version>
 					</dependency>
-					<!-- Other dependencies -->
 				</dependencies>
 			</plugin>
 		</plugins>
