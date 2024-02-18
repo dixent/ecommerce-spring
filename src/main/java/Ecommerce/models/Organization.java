@@ -27,4 +27,7 @@ public class Organization {
   public void setName(String name) {
     this.name = name;
   }
+
+  @OneToMany(mappedBy = "organization", cascade = CascadeType.ALL)
+  public List<Product> products;
 }

@@ -57,6 +57,14 @@
 			<artifactId>liquibase-core</artifactId>
 			<version>4.25.1</version>
 		</dependency>
+
+		<dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-bom</artifactId>
+      <version>2023.1.2</version>
+      <scope>import</scope>
+      <type>pom</type>
+    </dependency>
 	</dependencies>
 
 	<build>
